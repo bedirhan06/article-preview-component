@@ -1,0 +1,17 @@
+{
+  "name": "article-preview-component",
+  "version": "0.1.0",
+  "scripts": {
+    "dev" : "sass --watch styles:dist",
+    "build": "sass styles:dist --style compressed --no-source-map"
+  },
+  "author": {
+    "email": "asbed06@gmail.com",
+    "name": "Bedirhan",
+    "url": "http://github.com/bedirhan06"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.59.2"
+  }
+}
