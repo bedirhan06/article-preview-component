@@ -3,90 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Article preview component</title>
-    <link rel="stylesheet" href="dist/index.css" />
-    <script type="text/javascript" src="script/index.js" defer></script>
   </head>
   <body>
     <section class="container">
       <img
-        class="container__drawer"
+        class="container__img"
         src="images/drawers.jpg"
         alt="vaso with wheat top of the green drawer"
       />
-      <div class="container__texts">
-        <div class="container__title">
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </div>
-        <div class="container__description">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </div>
-      </div>
-      <footer class="footer js-footer">
-        <div class="footer__user-id js-user">
-          <img
-            class="footer__avatar"
-            width="44"
-            height="44"
-            src="images/avatar-michelle.jpg"
-            alt="avatar of michelle"
-          />
-          <div class="footer__user">
-            <div class="footer__username">Michelle Appleton</div>
-            <div class="footer__date">28 Jun 2020</div>
+
+      <div class="wrapper">
+        <div class="container__texts">
+          <div class="container__title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </div>
+          <div class="container__description">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
           </div>
         </div>
-
-        <div class="share js-share" hidden>
-          <div class="share__share-text js-share-text">SHARE</div>
-          <img
-            class="share__facebook"
-            width="20"
-            height="20"
-            src="images/icon-facebook.svg"
-            alt="facebook icon"
-          />
-          <img
-            class="share__twitter"
-            width="20"
-            height="17"
-            src="images/icon-twitter.svg"
-            alt="twitter icon"
-          />
-          <img
-            class="share__pinterest"
-            width="20"
-            height="20"
-            src="images/icon-pinterest.svg"
-            alt="pinterest icon"
-          />
-        </div>
-        <div class="share-icon-wrapper js-share-icon-wrapper">
-          <svg
-            class="share__share-icon js-share-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="13"
-            fill="#6E8098"
-          >
-            <path
-              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+        <footer class="footer js-footer">
+          <div class="footer__user-id js-user">
+            <img
+              class="footer__avatar"
+              width="44"
+              height="44"
+              src="images/avatar-michelle.jpg"
+              alt="avatar of michelle"
             />
-          </svg>
-        </div>
-      </footer>
+            <div class="footer__user">
+              <div class="footer__username">Michelle Appleton</div>
+              <div class="footer__date">28 Jun 2020</div>
+            </div>
+          </div>
+          <div class="share js-share" hidden>
+            <div class="share__share-text js-share-text">SHARE</div>
+            <img
+              class="share__facebook"
+              width="20"
+              height="20"
+              src="images/icon-facebook.svg"
+              alt="facebook icon"
+            />
+            <img
+              class="share__twitter"
+              width="20"
+              height="17"
+              src="images/icon-twitter.svg"
+              alt="twitter icon"
+            />
+            <img
+              class="share__pinterest"
+              width="20"
+              height="20"
+              src="images/icon-pinterest.svg"
+              alt="pinterest icon"
+            />
+          </div>
+          <div class="share-icon-wrapper js-share-icon-wrapper">
+            <svg
+              class="share__share-icon js-share-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="13"
+              fill="#6E8098"
+            >
+              <path
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
+
+            <div class="share__tooltip js-share-tooltip">
+              <div class="share__share-text js-share-text">SHARE</div>
+              <img
+                class="share__facebook"
+                width="20"
+                height="20"
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+              />
+              <img
+                class="share__twitter"
+                width="20"
+                height="17"
+                src="images/icon-twitter.svg"
+                alt="twitter icon"
+              />
+              <img
+                class="share__pinterest"
+                width="20"
+                height="20"
+                src="images/icon-pinterest.svg"
+                alt="pinterest icon"
+              />
+            </div>
+          </div>
+        </footer>
+      </div>
     </section>
+
+    <script type="module" src="src/main.js" defer></script>
   </body>
 </html>

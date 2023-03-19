@@ -1,0 +1,51 @@
+.share__tooltip {
+  padding-inline: 30px;
+  padding-block: 15px;
+
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  height: 50px;
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--grayish-blue);
+  letter-spacing: 6px;
+  font-size: 12px;
+  opacity: 0;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+
+  transform:  translateX(-50%);
+
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+
+  &--active {
+    opacity: 1;
+  }
+
+  // Tooltip arrow
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--very-dark-grayish-blue);
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}

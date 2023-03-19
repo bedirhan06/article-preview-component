@@ -8,10 +8,12 @@
     "url": "http://github.com/bedirhan06"
   },
   "scripts": {
-    "dev": "sass --watch styles:dist",
-    "build": "sass styles:dist --style compressed --no-source-map"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "sass": "^1.59.2"
+    "sass": "^1.59.2",
+    "vite": "^4.2.0"
   }
 }

@@ -1,16 +1,26 @@
+import '@/styles/index.scss';
+
 const footerEl = document.querySelector(".js-footer");
 const userEl = document.querySelector(".js-user");
 const shareEl = document.querySelector(".js-share");
 const shareTextEl = document.querySelector(".js-share-text");
 const iconEl = document.querySelector(".js-share-icon-wrapper");
 const shareIconEl = document.querySelector(".js-share-icon");
+const tooltipEl = document.querySelector(".js-share-tooltip");
 
-if (window.screen.width >= 768) {
-  
-} else {
-  let active = false;
+let active = false;
 
-  iconEl.addEventListener("click", (event) => {
+iconEl.addEventListener("click", (event) => {
+  // Desktop
+  if (window.innerWidth >= 768) {
+    if (active) {
+      tooltipEl.classList.remove("share__tooltip--active");
+    } else {
+      tooltipEl.classList.add("share__tooltip--active");
+    }
+  }
+  // Mobile
+  else {
     if (active) {
       userEl.hidden = false;
       shareEl.hidden = true;
@@ -20,6 +30,7 @@ if (window.screen.width >= 768) {
       shareEl.hidden = false;
       footerEl.classList.add("footer--active");
     }
-    active = !active;
-  });
-}
+  }
+
+  active = !active;
+});

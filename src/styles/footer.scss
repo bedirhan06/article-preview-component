@@ -38,8 +38,6 @@
 
   &--active {
     background-color: var(--very-dark-grayish-blue);
-    
-
 
     .share {
       column-gap: 16px;
@@ -75,4 +73,12 @@
 
   background-color: var(--light-grayish-blue);
   border-radius: 9999px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .share-icon-wrapper {
+    // NOTE: This line required for share tooltip for desktop
+    position: relative;
+  }
 }
