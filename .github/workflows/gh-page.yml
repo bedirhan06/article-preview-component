@@ -36,7 +36,10 @@ jobs:
         with:
           node-version: 18
 
-      - name: Compile SCSS files
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Build project
         run: pnpm build
 
       - name: Setup Pages
