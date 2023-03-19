@@ -1,10 +1,11 @@
 import { defineConfig } from "vite";
-import { URL, fileURLToPath } from 'url'
+import { URL, fileURLToPath } from "url";
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === "development" ? "/" : "/article-preview-component/",
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL('./src', import.meta.url)),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
-  }
-});
+  },
+}));
